@@ -1,6 +1,7 @@
 Запуск:
  1. Скопировать репозиторий.
- 2. npm start.
+ 2. npm install
+ 3. npm start.
 
 Или
  1. Скачать index.html и styles.css в одну директорию.
