@@ -1,0 +1,126 @@
+:root {
+  --color-white-100: #ffffff;
+  --color-white-100-50: rgba(255, 255, 255, 0.5);;
+  --color-white-200: #f4f8ff;
+  --color-blue-100: #3579f5;
+  --color-blue-200: #4777ed;
+  --color-blue-300: #2364db;
+  --color-bg: #5e5e5e;
+
+  --font-body: 'Inter', sans-serif;
+  --font-semibold-15: normal 600 15px var(--font-body);
+  --font-regular-12: normal 400 12px var(--font-body);
+  --font-regular-14: normal 400 14px var(--font-body);
+  --font-regular-20: normal 400 20px var(--font-body);
+    
+}   
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--color-white-100);
+  background-color: var(--color-bg);
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+h1 {
+  font: var(--font-semibold-15);
+}
+
+h2 {
+  font: var(--font-regular-12);
+}
+
+.checklist-container {
+  display: flex;
+  width: 743px;
+  height: 91px;
+  margin: 200px auto;
+  border-radius: 10px;
+  background-color: var(--color-blue-200);
+}
+
+.progress-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin: auto 0;
+  margin-left: 18px;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  }
+  
+.progress-background {
+  stroke: var(--color-white-100-50);
+  stroke-width: 1px;
+}
+  
+.progress-circle {
+  stroke: var(--color-white-100);
+  stroke-width: 2px;
+  stroke-dasharray: 100;
+  stroke-dashoffset: calc(100 - var(--val));
+  stroke-linecap: round;
+}
+  
+.percent {
+  --val: 2;
+}
+  
+.progress-bar p {
+  font: var(--font-regular-20);
+}
+
+.checklist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: auto 68px auto 16px;
+  width: 389px;
+  height: 64px;
+  
+}
+
+.checklist-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 18px;
+  border-radius: 40px;
+  background: var(--color-blue-300);  
+}
+
+.checklist-info p {
+  font: var(--font-regular-12);
+}
+
+.checklist-button {
+  margin: auto 0;
+  padding: 0;
+  width: 170px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  color: var(--color-blue-200);
+  font: var(--font-regular-14);
+}
+
+
+
